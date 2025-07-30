@@ -1,0 +1,49 @@
+assistant:
+  name: "DevAssistant"
+  description: "AI Assistant for Software Development Tasks"
+
+agents:
+  development:
+    name: "Development Agent"
+    tools: ["vscode", "aws_cli", "amazon_q", "git"]
+  
+  design:
+    name: "Design Agent" 
+    tools: ["browser", "drawio"]
+  
+  communication:
+    name: "Communication Agent"
+    tools: ["outlook", "slack", "chime"]
+  
+  project:
+    name: "Project Management Agent"
+    tools: ["asana", "browser"]
+  
+  system:
+    name: "System Agent"
+    tools: ["computer_control", "file_system"]
+
+tools:
+  vscode:
+    command: "code"
+    extensions: ["amazonwebservices.amazon-q-vscode"]
+  
+  aws_cli:
+    profile: "default"
+    region: "us-east-1"
+  
+  browser:
+    driver: "chrome"
+    headless: false
+  
+  slack:
+    workspace_url: ""
+    token: ""
+  
+  outlook:
+    client_id: ""
+    client_secret: ""
+  
+  asana:
+    access_token: ""
+    workspace_id: ""
